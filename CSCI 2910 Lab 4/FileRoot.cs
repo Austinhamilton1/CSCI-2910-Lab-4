@@ -8,7 +8,7 @@ namespace CSCI_2910_Lab_4
 {
     public class FileRoot
     {
-        private string _root = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString();
-        public string Root { get { return _root; } }
+        static private string _root = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString();
+        static public string Root { get { return _root; } }
     }
 }
